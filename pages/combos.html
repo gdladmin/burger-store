@@ -1,104 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burger Store - Combos</title>
-    <link rel="shortcut icon" href="../assets/img/bigmac.png" type="image/x-icon" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../styles/style.css" />
-  </head>
-  <body>
-    <div class="sticky-top shadow-sm">
-      <header class="py-2" style="background-color: #000000">
-        <div class="container d-flex justify-content-center align-items-center gap-3">
-          <a href="index.html" class="d-flex align-items-center text-decoration-none">
-            <img src="../assets/burgerstorelogo.png" alt="Logo" height="75" />
-            <h1 class="text-white mb-0 ms-2 fs-4 fw-bold">Burger Store</h1>
-          </a>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Store - Combos</title>
+  <link rel="shortcut icon" href="../assets/img/bigmac.png" type="image/x-icon" />
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-1">
-        <div class="container">
-          <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav gap-3 text-center">
-              <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="./productos.html">Burger's</a></li>
-              <li class="nav-item"><a class="nav-link active" href="combos.html">Combos</a></li>
-              <li class="nav-item"><a class="nav-link" href="./historia.html">Historia</a></li>
-              <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-            </ul>
-          </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+  <div class="sticky-top shadow-sm">
+    <header class="py-2" style="background-color: #000000">
+      <div class="container d-flex justify-content-center align-items-center gap-3">
+        <a href="index.html" class="d-flex align-items-center text-decoration-none">
+          <img src="../assets/burgerstorelogo.png" alt="Logo" height="75" />
+          <h1 class="text-white mb-0 ms-2 fs-4 fw-bold">Burger Store</h1>
+        </a>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-1">
+      <div class="container">
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-3 text-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./productos.html">Burger's</a></li>
+            <li class="nav-item"><a class="nav-link active" href="combos.html">Combos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./historia.html">Historia</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </div>
+  <main class="container my-5">
+    <div class="text-center mb-5">
+      <h2 class="display-4 fw-bold text-dark">Nuestros Combos</h2>
+      <p class="text-muted">Ahorra más con nuestras promociones armadas para ti.</p>
     </div>
-    <main class="container my-5">
-      <div class="text-center mb-5">
-        <h2 class="display-4 fw-bold text-dark">Nuestros Combos</h2>
-        <p class="text-muted">Ahorra más con nuestras promociones armadas para ti.</p>
-      </div>
 
-      <div class="row g-4 justify-content-center">
-        <div class="col-sm-10 col-md-6 col-lg-4">
-          <div class="card h-100 shadow border-0 position-relative">
-            <span class="badge-promo">¡Más Vendido!</span>
-            <img src="../assets/combo1.png" class="combo-img" alt="Combo Uno" />
-            <div class="card-body text-center">
-              <h3 class="h4 card-title fw-bold">Combo Uno</h3>
-              <p class="card-text text-muted small">Incluye Burger, Papas y Bebida Grande.</p>
-              <p class="h3 text-danger fw-bold">$30</p>
-              <button class="btn btn-dark w-100 mt-2">Elegir Combo</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-10 col-md-6 col-lg-4">
-          <div class="card h-100 shadow border-0">
-            <img src="../assets/combo2.png" class="combo-img" alt="Combo Dos" />
-            <div class="card-body text-center">
-              <h3 class="h4 card-title fw-bold">Combo Dos</h3>
-              <p class="card-text text-muted small">Doble carne, Papas XL y Bebida.</p>
-              <p class="h3 text-danger fw-bold">$30</p>
-              <button class="btn btn-dark w-100 mt-2">Elegir Combo</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-10 col-md-6 col-lg-4">
-          <div class="card h-100 shadow border-0">
-            <img src="../assets/combo3.png" class="combo-img" alt="Combo tres" />
-            <div class="card-body text-center">
-              <h3 class="h4 card-title fw-bold">Combo Tres</h3>
-              <p class="card-text text-muted small">Burger de Pollo, Nuggets y Bebida.</p>
-              <p class="h3 text-danger fw-bold">$30</p>
-              <button class="btn btn-dark w-100 mt-2">Elegir Combo</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-10 col-md-6 col-lg-4">
-          <div class="card h-100 shadow border-0">
-            <img src="../assets/combo4.png" class="combo-img" alt="Combo cuatro" />
-            <div class="card-body text-center">
-              <h3 class="h4 card-title fw-bold">Combo Cuatro</h3>
-              <p class="card-text text-muted small">Combo Familiar: 4 Burgers + 2 Papas.</p>
-              <p class="h3 text-danger fw-bold">$30</p>
-              <button class="btn btn-dark w-100 mt-2">Elegir Combo</button>
-            </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0 position-relative">
+          <span class="badge-promo">¡Más Vendido!</span>
+          <img src="../assets/combo_clasico_doble_01.png" class="combo-img" alt="Combo Clásico Doble" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Clásico Doble</h3>
+            <p class="card-text text-muted small">Incluye dos Burgers, dos Papas y dos Bebida Grande.</p>
+            <p class="h3 text-danger fw-bold" data-product-img="combo_clasico_doble_01"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-      <p class="mb-0 small">&copy; 2025 BURGER STORE. Todos los derechos reservados.</p>
-    </footer>
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <img src="../assets/combo_helado_02.png" class="combo-img" alt="Combo Fresh" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Fresh</h3>
+            <p class="card-text text-muted small">Burger Avocado_fresh con papas, gaseosa y HELADO!!.</p>
+            <p class="h3 text-danger fw-bold" data-product-img="combo_helado_02"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <img src="../assets/combo_triple_bacon_03.png" class="combo-img" alt="Combo Triple Bacon" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Triple Bacon</h3>
+            <p class="card-text text-muted small">Triple Burger con cheddar, bacon y cebolla grispy y Papas con cheddar
+              y Bebida a Eleccion.</p>
+            <p class="h3 text-danger fw-bold" data-product-img="combo_triple_bacon_03"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <img src="../assets/combo_clasico_04.png" class="combo-img" alt="Combo Clásico" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Clásico</h3>
+            <p class="card-text text-muted small">Burgen Doble con lechuga, tomate, cebolla y queso cheddar. Mas Papas y
+              Bebida.
+            <p class="h3 text-danger fw-bold" data-product-img="combo_clasico_04"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <img src="../assets/combo_mushrooms_05.png" class="combo-img" alt="Combo Mushrooms" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Mushrooms</h3>
+            <p class="card-text text-muted small">Deliciosa burger con champiñones y queso suizo mas Aros de cebolla y
+              Cerveza.</p>
+            <p class="h3 text-danger fw-bold" data-product-img="combo_mushrooms_05"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <img src="../assets/combo_jalapeño_06.png" class="combo-img" alt="Combo Jalapeño" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Jalapeño</h3>
+            <p class="card-text text-muted small">Picante burger con jalapeños y queso pepper jack mas Cerveza y Papas.
+            </p>
+            <p class="h3 text-danger fw-bold" data-product-img="combo_jalapeño_06"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-md-6 col-lg-4">
+        <div class="card h-100 shadow border-0">
+          <img src="../assets/combo_egg_07.png" class="combo-img" alt="Combo Egg" />
+          <div class="card-body text-center">
+            <h3 class="h4 card-title fw-bold">Combo Egg</h3>
+            <p class="card-text text-muted small">Burger con huevo frito y tocino crujiente mas Papas y Bedidas.</p>
+            <p class="h3 text-danger fw-bold" data-product-img="combo_egg_07"></p>
+            <button class="btn btn-dark w-100 mt-2 animate-click">Elegir Combo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0 small">&copy; 2025 BURGER STORE. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/prices.js"></script>
+  <script src="../js/interactions.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,86 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+/* Altura uniforme para el header y el nav */
+header,
+.navbar {
+    min-height: $header-min-height;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    background-color: $black !important;
+    border-bottom: 1px solid $gray-dark;
+
+    /* Eliminamos márgenes extra para mantener el centrado perfecto */
+    h1 {
+        line-height: 1;
+        margin: 0;
+    }
+}
+
+.navbar {
+    min-height: $navbar-min-height;
+}
+
+.navbar-brand {
+    img {
+        @include transition(transform, 0.3s, ease);
+    }
+
+    @include hover-scale(1.1);
+
+    /* Aseguramos que el título no rompa la línea en pantallas pequeñas */
+    span {
+        white-space: nowrap;
+    }
+}
+
+
+/* 2. Personalización del Menú (Hover) */
+
+.navbar-nav {
+    .nav-link {
+        color: $white !important;
+        /* Forzamos color blanco inicial */
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 10px 20px !important;
+        @include transition(all, 0.3s, ease-in-out);
+        position: relative;
+
+        /* EFECTO HOVER PRINCIPAL */
+        &:hover {
+            color: $yellow !important;
+            background-color: $nav-hover-bg;
+            border-radius: 5px;
+            transform: translateY(-3px);
+
+            &::after {
+                width: 70%;
+                /* La línea crece desde el centro */
+            }
+        }
+
+        /* Línea animada debajo del texto al pasar el mouse */
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 5px;
+            left: 50%;
+            background-color: $yellow;
+            @include transition(all, 0.3s, ease-in-out);
+            transform: translateX(-50%);
+        }
+
+        /* 3. Estilo para el link 'Activo' (Página actual) */
+        &.active {
+            color: $yellow !important;
+            font-weight: bold;
+        }
+    }
+}
